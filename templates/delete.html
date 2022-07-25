@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Delete student:</h1>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.id.label}}{{form.id()}}
+        {{form.submit()}}
+    </form>
+</div>
+
+{% endblock %}

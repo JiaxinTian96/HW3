@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HW3</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>HW3</h1> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        </nav>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{url_for('index')}}">Home |</a>
+            <a class="nav-item nav-link" href="{{url_for('add')}}">Add student |</a>
+            <a class="nav-item nav-link" href="{{url_for('list_student')}}">Full list |</a>
+            <a class="nav-item nav-link" href="{{url_for('delete')}}">Delete student |</a>
+            <a class="nav-item nav-link" href="{{url_for('pass_student')}}">Passing student</a>
+        </div>
+        
+        {% block content %}
+    
+        {% endblock %}
+    </body>
+    <!-- <p>
+        {% if customer %}
+        The customer: {{customer}}
+        Updating below:
+        {% else %}
+        Please enter your customer id:
+        {% endif %}
+    </p> -->
+    
+</html>
